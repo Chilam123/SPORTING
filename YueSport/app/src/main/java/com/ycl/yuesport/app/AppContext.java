@@ -39,6 +39,7 @@ public class AppContext extends Application {
 
         //Initialize ImageLoader with configuration.
         ImageLoader.getInstance().init(configuration);
+        //
 
 
 
