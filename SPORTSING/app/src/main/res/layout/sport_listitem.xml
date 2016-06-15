@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/backgroundcolor"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/image_sport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg_sport_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/title_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:maxEms="40"
+
+                    android:singleLine="true"
+                    android:text="本周六有大型活动哦!快来参加吧！"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_city_sport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:maxEms="5"
+                        android:singleLine="true"
+                        android:text="北京"
+                        android:layout_centerVertical="true"
+                        android:textColor="#1a1919"
+                        android:textSize="15sp" />
+
+                    <TextView
+                    android:id="@+id/text_xuechang_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:text="南山滑雪场"
+                    android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/text_city_sport"
+                    android:textColor="#1a1919"
+                    android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_data_sport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:text="2016年5月10号"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/text_xuechang_sport"
+                        android:textColor="#1a1919"
+                        android:textSize="15sp" />
+
+              <ImageView
+                  android:id="@+id/image_join_sport"
+                  android:layout_width="100dp"
+                  android:layout_height="30dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="10dp"
+                  android:scaleType="fitXY"
+                  android:src="@mipmap/bt_sport_join"
+                  />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
