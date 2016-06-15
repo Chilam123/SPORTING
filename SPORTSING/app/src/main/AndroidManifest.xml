@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ycl.sportsing">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".app.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".ui.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.ShouYeActivity" />
+        <activity android:name=".ui.HuoDongActivity" />
+        <activity android:name=".ui.MineActivity" />
+        <activity android:name=".ui.ForTestActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.NewBieGuideActivity" />
+        <activity android:name=".ui.WebViewActivity" />
+        <activity android:name=".ui.SecondHandActivity" />
+        <activity android:name=".ui.XuechangActivity" />
+        <activity android:name=".ui.XuechangGuideActivity" />
+        <activity android:name=".ui.XuePiaoActivity" />
+        <activity android:name=".ui.XueChangWeatherActivity" />
+        <activity android:name=".ui.SelectWeatherActivity" />
+        <activity android:name=".ui.DongTaiActivity" />
+        <activity android:name=".ui.ShipinActivity" />
+        <activity android:name=".ui.PublishHuodongActivity" />
+        <activity android:name=".ui.MyJoinSportActivity" />
+        <activity android:name=".ui.MyPublishSportActivity"></activity>
+    </application>
+
+</manifest>
