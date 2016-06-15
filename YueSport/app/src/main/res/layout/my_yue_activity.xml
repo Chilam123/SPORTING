@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.YueDetailsHasCartActivity">
+
+    <!--toolbar-->
+    <include
+        layout="@layout/mytoolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_nonetwork_yue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightpink"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ic_nonetwork_yue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_nonetwork" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ic_nonetwork_yue"
+            android:text="网络连接不可用"
+            android:textSize="15sp"
+            android:textColor="@color/textgray" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/yue_list_xlistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+

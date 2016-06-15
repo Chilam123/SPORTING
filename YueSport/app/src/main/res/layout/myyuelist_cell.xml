@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_yuelist_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_ic_gym_myyue"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_gym" />
+
+                <TextView
+                    android:id="@+id/text_gym_name_myyue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/image_ic_gym_myyue"
+                    android:text="大众健身房俱乐部"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/image_ic_time_myyue"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_time" />
+
+                <TextView
+                    android:id="@+id/text_date_myyue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/image_ic_time_myyue"
+                    android:text="2016/6/23"
+                    android:textColor="@color/textgray"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text_time_myyue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/text_date_myyue"
+                    android:text="13:30"
+                    android:textColor="@color/textgray"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text_cart_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/text_time_myyue"
+                    android:background="@drawable/text_shape_publisher"
+                    android:text="无卡"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/image_ic_people_myyue"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_people" />
+
+                <TextView
+                    android:id="@+id/text_people_myyue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/image_ic_people_myyue"
+                    android:text="5人"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/image_ic_price_myyue"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/text_people_myyue"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_money" />
+
+                <TextView
+                    android:id="@+id/text_price_myyue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/image_ic_price_myyue"
+                    android:text="15元"
+                    android:textColor="@color/orange"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/image_ic_intent_myyue"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_intent" />
+
+                <TextView
+                    android:id="@+id/text_intent_myyue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/image_ic_intent_myyue"
+                    android:lines="2"
+                    android:maxEms="15"
+                    android:text="我们5个女生，想找个有卡的带我们进这家健身房一起去健身。"
+                    android:textColor="@color/blacklight"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_arrow_right" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/backgroundcolor" />
+
+</LinearLayout>

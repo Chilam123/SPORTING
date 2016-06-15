@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.MyYueDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--toolbar-->
+        <include
+            layout="@layout/mytoolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/image_publisher_touxiang_my_yue_details"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/test_touxiang_man" />
+
+                    <TextView
+                        android:id="@+id/text_publisher_name_my_yue_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/image_publisher_touxiang_my_yue_details"
+                        android:text="Chilam"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/text_cart_description_my_yue_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/text_publisher_name_my_yue_details"
+                        android:background="@drawable/text_shape_publisher"
+                        android:text="持卡人"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/text_cart_description_my_yue_details"
+                        android:background="@drawable/text_shape_publisher2"
+                        android:text="发布者"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/text_publisher_sex_my_yue_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_publisher_name_my_yue_details"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/image_publisher_touxiang_my_yue_details"
+                        android:text="男"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_publisher_tag_my_yue_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_publisher_name_my_yue_details"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/text_publisher_sex_my_yue_details"
+                        android:text="健身达人"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_publisher_cartstate_my_yue_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_publisher_name_my_yue_details"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/text_publisher_tag_my_yue_details"
+                        android:text="有卡"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_publisher_age_my_yue_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_publisher_name_my_yue_details"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/text_publisher_cartstate_my_yue_details"
+                        android:text="23岁"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgroundcolor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_menu_yue_on" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/text_jianshenfangname_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:maxLength="12"
+                            android:text="大众健身房俱乐部"
+                            android:textColor="@color/blacklight"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/text_yue_date_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text_jianshenfangname_my_yue_details"
+                            android:layout_marginTop="10dp"
+                            android:text="2016/6/23"
+                            android:textColor="@color/textgraydark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/text_yue_time_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text_jianshenfangname_my_yue_details"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/text_yue_date_my_yue_details"
+                            android:text="13:30"
+                            android:textColor="@color/textgraydark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/text_yue_people_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text_yue_date_my_yue_details"
+                            android:layout_marginTop="10dp"
+                            android:text="已约2/5人"
+                            android:textColor="@color/textgraydark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/text_price_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text_yue_time_my_yue_details"
+                            android:layout_below="@id/text_yue_date_my_yue_details"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/text_yue_people_my_yue_details"
+                            android:text="15元/人"
+                            android:textColor="@color/textgraydark"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/backgroundcolor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/test_location" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <GridView
+                            android:id="@+id/gridview_jianshenfang_thumb_pic_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="23dp"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/text_yue_areadetails_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gridview_jianshenfang_thumb_pic_my_yue_details"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="海淀区西土城路10号邮电大学北门学生宿舍B1层"
+                            android:textColor="@color/textgray"
+                            android:textSize="15sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/backgroundcolor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/test_love" />
+
+                    <TextView
+                        android:id="@+id/text_intent_my_yue_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="18dp"
+                        android:text="想找几个女性健身朋友一起健身，要求20-25岁"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/backgroundcolor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/participant" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/text_no_participant_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="暂时还没有约上健友哦"
+                            android:textColor="@color/textgray"
+                            android:textSize="17sp" />
+
+                        <GridView
+                            android:id="@+id/gridview_participant_list_my_yue_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text_no_participant_my_yue_details"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="23dp"
+                            android:layout_marginTop="10dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!--显示放大图片的viewpager-->
+    <com.ycl.yuesport.pager.HackyViewPager
+        android:id="@+id/viewpager_expanded_image_my_yue_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="invisible" />
+
+</RelativeLayout>

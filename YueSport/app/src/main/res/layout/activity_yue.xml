@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical"
+    tools:context="com.ycl.yuesport.ui.YueActivity">
+
+    <!--toolbar-->
+    <include
+        layout="@layout/mytoolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_hascart_yue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_hascart_yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="有卡"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/image_hascart_choose"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/text_hascart_yue"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_cart_choose"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/backgroundcolor" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_nocart_yue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_nocart_yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="无卡"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/image_nocart_choose"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/text_nocart_yue"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_cart_choose"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/shallowgray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.ycl.yuesport.myview.ExpandTabView
+                android:id="@+id/expandtab_hascart_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"></com.ycl.yuesport.myview.ExpandTabView>
+
+            <com.ycl.yuesport.myview.ExpandTabView
+                android:id="@+id/expandtab_nocart_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"
+                android:visibility="invisible"></com.ycl.yuesport.myview.ExpandTabView>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/shallowgray" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_nonetwork_yue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/lightpink"
+            android:visibility="invisible"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ic_nonetwork_yue"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_nonetwork" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ic_nonetwork_yue"
+                android:text="网络连接不可用"
+                android:textSize="15sp"
+                android:textColor="@color/textgray" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/yue_list_xlistview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativelayout_nonetwork_yue"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

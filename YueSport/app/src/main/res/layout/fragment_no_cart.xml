@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.NoCartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+
+        <!--android:orientation="horizontal">-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/relativelayout_youka_yue"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="有卡"-->
+        <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="1sp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@color/backgroundcolor" />-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/relativelayout_wuka_yue"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="无卡" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/shallowgray" />-->
+
+
+        <!-- 分类栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <!-- 三个模块 -->
+            <RelativeLayout
+                android:id="@+id/relativelayout_area_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_area_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="地区" />
+
+                <ImageView
+                    android:id="@+id/iamge_ic_area_classify"
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/text_area_classify"
+                    android:scaleType="fitXY"
+
+                    android:src="@mipmap/ic_arrow_down" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:layout_marginTop="8dp"
+                android:background="@color/backgroundcolor" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_time_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_time_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="时间" />
+
+                <ImageView
+                    android:id="@+id/iamge_ic_time_classify"
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/text_time_classify"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_arrow_down" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:layout_marginTop="8dp"
+                android:background="@color/backgroundcolor" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_sex_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_sex_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="性别" />
+
+                <ImageView
+                    android:id="@+id/iamge_ic_sex_classify"
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/text_sex_classify"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_arrow_down" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shallowgray" />
+
+    <include layout="@layout/yue_list_xlistview" />
+
+
+</LinearLayout>
